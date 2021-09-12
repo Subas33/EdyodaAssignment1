@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Favourite Food</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #f75a1c 100%);
+    
+}
+
+
+
+#top-bar{
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.heading{
+    padding: 30px;
+    color: white;
+    
+}
+
+.heading:hover{
+    background: gold;
+}
+
+
+.container{
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.food-list{
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    list-style: none;
+    padding-bottom: 40px;
+    margin-left: 40%;
+}
+
+.food-list a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.food-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.food{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    font-family: 'Anton', sans-serif;
+}
+
+.card{
+  max-width:600px;
+  margin:0 auto;
+  padding:30px;
+  background-color:white;
+  display:flex;
+  flex-direction:column;
+  border-radius:50px;
+}
+
+.card h1{
+  text-align:center;
+}
+
+.card p{
+    color: gray;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.snap{
+  border-radius:50px;
+}
+
+.btn{
+    width: 150px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #e27d60;
+    
+}
+
+.btn a{
+    text-decoration: none;
+    color:black;
+}
+
+.btn h1{
+    font-weight: normal;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header id="top-bar">
+        <h1 class="heading"></h1>
+        <h1 class="heading">Index</h1>
+        <h1 class="heading">Food</h1>
+        <h1 class="heading">About</h1>
+    </header>
+    
+ 
+
+    <div class="container" id="container">
+        <h1 style="color:chocolate; text-align: center; font-weight: bolder; font-family: -apple-system,
+         BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Here's my Top 5 Favourite Foods</h1>
+        <ul class="food-list" id="food-list">
+          
+            <li><a href="#donut">Donuts</a></li>
+            <li><a href="#shushi">Shushi</a></li>
+            <li><a href="#cakes">Icecream Cakes</a></li>
+            <li> <a href="#ramen">Ramen</a> </li>
+          <li> <a href="#burger">Burger</a> </li>
+        </ul>
+    <div class="food-items">
+   
+    
+        <div class="food" id="donut">
+          <div class="card">
+             <img class="snap" src="https://img-9gag-fun.9cache.com/photo/axgY1YM_700bwp.webp" alt="Donuts" >
+            <h1>Donuts</h1>
+                <p>A  donut is a type of leavened fried dough. ... Once fried, doughnuts may be glazed with a 
+                    sugar icing, spread with icing or chocolate on top, or topped with powdered sugar, 
+                    cinnamon, sprinkles or fruit. Other shapes include rings, balls, flattened spheres, twists, and other forms.</p>
+
+                <div class="btn">
+                    <a href="#container"><h1>Go Back</h1></a>
+                </div>
+            </div>
+           
+        </div>
+        <div class="food" id="shushi">
+          <div class="card">
+             <img class="snap" src="https://pbs.twimg.com/media/DjNXyVcUcAAVYSm?format=jpg&name=900x900" alt="Shushi" >
+            <h1>Shushi</h1>
+                <p>Sushi, a staple rice dish of Japanese cuisine, 
+                    consisting of cooked rice flavoured with vinegar and a variety of vegetable,
+                     egg, or raw seafood garnishes and served cold. ... 
+                     For maki-zushi, a sheet of nori (laver, a seaweed) is spread with rice, 
+                     then with seafood or vegetables and garnishes.</p>
+                     <div class="btn">
+                        <a href="#container"><h1>Go Back</h1></a>
+                    </div>
+            </div>
+            
+        </div>
+        <div class="food" id="cakes">
+           <div class="card">
+              <img class="snap" src="https://wallpapercave.com/wp/wp5408463.png" alt="Icecream Cakes" >
+            <h1>Icecream Cakes</h1>
+                <p>The stunning dish was not only a delicious dessert, 
+                    it showed off the skills of the home cook and sparked conversation about a treat that's both scorched and frozen! </p>
+                    <div class="btn">
+                        <a href="#container"><h1>Go Back</h1></a>
+                    </div>
+            </div>
+            
+        </div>
+        <div class="food" id="ramen">
+            <div class="card">
+              <img class="snap" src="https://pbs.twimg.com/media/EyjUH8yXEAApFRD.jpg" alt="Ramen" >
+                <h1>Ramen</h1>
+                <p>All the donuts here, are worth a try. Even the cup cakes are nice. They are decorated so beautifully, it is a treat to eat them. :)
+
+                    Double trouble,Black Forest Beauty and Midnight Beauty are my personal favorites here.
+                    The ultimate place to visit for getting high on chocolates. :P
+                    
+                    https://www.tripadvisor.in/ShowUserReviews-g297654-d3600805-r368721435-Mad_Over_Donuts-Pune_Pune_District_Maharashtra.html#</p>
+                    <div class="btn">
+                        <a href="#container"><h1>Go Back</h1></a>
+                    </div>
+            </div>
+            
+        </div>
+      <div class="food" id="burger">
+          <div class="card">
+             <img class="snap" src="https://i.pinimg.com/originals/94/16/fd/9416fd48260213cd8865397c11295630.jpg" alt="Burger" >
+            <h1>Burger</h1>
+                <p>
+                    It is an essential compound in your body which help you to keep your body active and productive. 
+                There are some ingredients in the burger which has healthy proteins which helps you to build muscles. 
+                Ingredients such as bacon are a brilliant source of protein which will surely help you to keep your body fitter.</p>
+                
+                <div class="btn">
+                    <a href="#container"><h1>Go Back</h1></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    
+</div>
+
+</body>
+</html>
