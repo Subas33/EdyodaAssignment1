@@ -8,7 +8,7 @@ const pinkRadio = document.getElementById("pink-radio");
 
 const clicked = (e)=>{
     e.target.classList.toggle("radio-selected");
-    console.log("clicked");
+    e.target.parentElement.classList.toggle("selected");
 }
 
 redRadio.addEventListener("click", e=>{
