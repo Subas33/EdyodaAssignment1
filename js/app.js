@@ -1,0 +1,1 @@
+alert("Please open in screens with width 1400 for Desktop view");

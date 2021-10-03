@@ -17,6 +17,7 @@ body{
 
 }
 
+
 section{
 
     background-color: rgba(245, 245, 245, 0.952);
@@ -922,6 +923,7 @@ footer{
 .footer-container{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .footer-card{
@@ -982,4 +984,348 @@ footer{
 footer .logo{
     margin-left: 5%;
     /* margin-top: -40px; */
+}
+
+@media screen and (max-width: 400px) {
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0;
+        /* margin-right: -16%; */
+        font-size: .5rem;
+    }
+
+    header{
+        height: 80vh;
+        /* width: 100%; */
+    }
+
+    header .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 45%;
+        height: 12%;
+    }
+
+    .menu-bar{
+        display: none;
+    }
+
+    .phone-menubar{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 12%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .hamburger-menu{
+        width: 13%;
+        height: 2px;
+        margin: 6px;
+        margin-right: 15px;
+        background-color: black;
+    }
+
+    .header-content{
+        width: 100%;
+        margin-left: -15%;
+        margin-top: 50%;
+        display: flex;
+        position: relative;
+        
+    }
+
+    .header-content h1{
+        font-size: 5.5em;
+        width: 180%;
+        margin-bottom: 50px;
+    }
+
+    .header-content p{
+        font-size: 2.2em;
+        width: 160%;
+        color: rgb(235, 235, 235);
+        margin-bottom: 30px;
+    }
+
+
+    .left-content{
+        width: 100%;
+        display: flex;
+        /* margin-left: 0; */
+        flex-direction: column;
+    }
+
+
+    .right-content{
+        width: 15%;
+        height: 100%;
+        position: absolute;
+        bottom: -20%;
+        right: -15%;
+
+    }
+
+    .header-contact{
+        display: none;
+    }
+
+    .quote{
+        width: 110%;
+        /* height: 95%; */
+    }
+
+    .specialization{
+        margin: 15% 5%;
+        margin-bottom: 60%;
+    }
+    .background-text{
+        display: none;
+    }
+
+    .special-top{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        height: 10%;
+        margin: 20% 0;
+        
+    }
+
+    .special-top h1{
+        width: 100%;
+        height: 50%;
+        font-size: 3em;
+        margin-bottom: -8%;
+    }
+
+    .special-top a{
+        width: 100%;
+        height: 50%;
+        font-size: 1.8em;
+        color: var(--font-color);
+    }
+
+    .special-cards{
+        flex-direction: column;
+        /* width: 100%; */
+
+        margin: -18% 5%;
+        margin-right: -9%;
+        /* margin-bottom: 40%; */
+    }
+
+    .special-card{
+        width: 100%;
+        height: 23%;
+        margin-bottom: 10%;
+    }
+
+    .special-card h2{
+        font-size: 3em;
+        font-weight: 600;
+    }
+
+    .special-card p{
+        font-size: 2.5em;
+        margin-top: 5%;
+    }
+
+    .special-card a{
+        font-size: 1.8em;
+    }
+
+    .about{
+        flex-direction: column;
+        margin: 0 5%;
+        margin-bottom: 200%;
+        
+    }
+
+    .about-image{
+        width: 100%;
+        margin-top: 130%;
+        margin-bottom: 20%;
+    }
+
+    .about-right-content{
+        margin: 0;
+        margin-top: 85%;
+        text-align: left;
+        margin-left: -65%;
+        margin-right: -45%;
+        /* width: 100%; */
+    
+    }
+
+    .about-right-content h1{
+
+        font-weight: 600;
+        margin-bottom: 10%;
+    }
+
+    .about-right-content p{
+        font-size: 2.5em;
+        margin-bottom: 10%;
+    }
+
+    .about-right-content a{
+        font-size: 2em;
+        margin-bottom: 10%;
+    }
+
+
+    .numbers{
+        margin: 0 10%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .number-card{
+        width: 100%;
+        height: 22%;
+        margin-bottom: 20%;
+    }
+
+    .number-card h1{
+        font-size: 8em;
+        margin-bottom: 15%;
+    }
+
+    .number-card p{
+        font-size: 2.5em;
+    }
+
+
+    .projects{
+        margin: 5%;
+    }
+
+    .project-top{
+        flex-direction: column;
+        margin-bottom: 10%;
+        position: relative;
+        align-items: flex-start;
+    }
+
+    .project-top a{
+        font-size: 2em;
+        margin-left: -5%;
+    }
+
+    .project-cards{
+        margin-right: -200%;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .project-view{
+        width: 100px;
+        height: 100px;
+        margin-top: 50%;
+        font-size: 1.2em;
+        padding-top: 30px;
+        /* margin-left: -10px; */
+    }
+
+    .project-footer{
+        margin: 0 -5%;
+        /* margin-right: -15%; */
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        text-align: left;
+        align-items: flex-start;
+        /* width: 100%; */
+    }
+
+    .project-footer p{
+        font-size: 3em;
+    
+    }
+
+    .project-footer a{
+        margin-top: -10%;
+        font-size: 2em;
+        margin-bottom: 10%;
+        width: -10%;
+    }
+
+
+    .professionals{
+        margin: 5%;
+        /* margin-bottom: 20%; */
+    }
+
+    .pro-top{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 10%;
+        text-align: left;
+    }
+
+    .pro-top h1{
+        margin-left: -10%;
+    }
+
+    .pro-top a{
+        margin-left: -65%;
+        text-align: left;
+        font-size: 1.7em;
+    }
+
+    .professional-cards{
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .professional-card{
+        width: 100%;
+        height: 60%;
+    }
+
+    .pro-card-content{
+        padding: 10%;
+    }
+
+    .pro-card-content p{
+        margin-top: 5%;
+        font-size: 2em;
+    }
+
+    .clients{
+        margin: 0 5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cli-top{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
+
+    .cli-top a{
+        font-size: 2em;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
