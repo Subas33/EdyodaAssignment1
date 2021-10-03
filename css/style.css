@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
 :root{
     --theme-color: #e47312;
     --font-color: #919198;
@@ -22,7 +23,7 @@ section{
 }
 
 header{ 
-    background:linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.5)),url(https://nuuk-e3eaa.firebaseapp.com/assets/img/slide-2.jpg);;
+    background:linear-gradient(rgba(255,255,255,0.1), rgba(207, 204, 204, 0.877)),url(https://nuuk-e3eaa.firebaseapp.com/assets/img/slide-2.jpg);;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,6 +60,7 @@ a{
 
 .logo img{
     width: 55%;
+    cursor: pointer;
     
 }
 
@@ -82,6 +84,10 @@ a{
     
 }
 
+.menu:hover{
+    color: var(--theme-color);
+}
+
 .menu-selected{
     color: var(--theme-color);
 }
@@ -102,7 +108,7 @@ a{
 }
 .page-dropdown{
     box-sizing: border-box;
-    font-size: .7em;
+    font-size: .56em;
     position: absolute;
     z-index: 1;
     display: none;
@@ -145,6 +151,12 @@ a{
     padding: 15px;
     width: 160px;
     justify-content: center;
+    cursor: pointer;
+}
+
+.quote:hover{
+    color: white;
+    background-color: #e4812bce;;
 }
 
 .top-bar{
@@ -168,6 +180,7 @@ a{
 
 .left-content h1{
     font-size: 6.2em;
+    font-weight: 600;
     color: white;
     
 }
@@ -214,6 +227,7 @@ a{
     padding:10px;
     margin: 10px;
     border-bottom: 1px solid hsla(0, 0%, 100%, 0.14);
+    cursor: pointer;
 }
 
 .fa-instagram{
@@ -299,7 +313,7 @@ a{
 
 .special-top{
     position: relative;
-    top:-23%;
+    top:-20%;
     display: flex;
     margin-bottom: 40px;
     align-items: center;
@@ -356,7 +370,7 @@ a{
 
 .special-card a{
     color: #919198;
-    font-size: 1.5em;
+    font-size: 1.35em;
     width: 100px;
     padding-bottom: 5px;
 }
@@ -373,6 +387,7 @@ a{
     align-items: center;
     justify-content: space-between;
     margin-top: -15%;
+    margin-bottom: 10%;
 }
 
 .about-image{
@@ -429,6 +444,7 @@ a{
 .number-card h1{
     color: var(--theme-color);
     font-size: 5.7em;
+    font-weight: 500;
 }
 
 .number-card p{
@@ -467,6 +483,10 @@ a{
     top: 70%;
 }
 
+.project-top a{
+    width: 150px;
+}
+
 .project-background{
     position: relative;
 }
@@ -486,7 +506,7 @@ a{
 }
 
 .pro-2{
-    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/p-2.jpg);
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/p-4.jpg);
 }
 
 .pro-3{
@@ -509,11 +529,12 @@ a{
 
 .project-view{
     margin: 32% 33%;
+    margin-left: 40%;
     font-size: .8em;
     color: white; 
     text-align: center;  
     width: 90px;
-    height: 90px;
+    height: 80px;
     padding:10px;
     padding-top: 20px;
     background-color: var(--theme-color);
@@ -626,6 +647,7 @@ a{
     height: 32%;
     font-size: 1.7em;
     color: white;
+    cursor: pointer;
 }
 
 .clients{
@@ -638,7 +660,7 @@ a{
 }
 
 .left{
-    width: 40%;
+    width: 38%;
     height: 100%;
     position: relative;
 }
@@ -657,16 +679,17 @@ a{
 
 
 .right{
-    width: 50%;
+    width: 60%;
     display: flex;
-    height: 93%;
+    height: 90%;
     margin-bottom: 10%;
+    justify-content: space-evenly;
 }
 
 .client-cards{
     position: relative;
-    box-sizing: border-box;
-    width: 95%;
+    /* box-sizing: border-box; */
+    width: 80%;
     height: 40%;
     background-color: white;
     text-align: center;
@@ -713,12 +736,30 @@ a{
     margin-top: 20%;
 }
 
+.r-left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.r-left .client-cards{
+    /* padding-top: 10%; */
+}
 .r-right{
     margin-top: 20%;
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 45%;
 
+}
+
+
+.r-right .client-cards{
+    height: 39%;
+    box-sizing: border-box;
 }
 
 
@@ -851,6 +892,7 @@ a{
     align-items: center;
     justify-content: center;
     font-size: .8em;
+    cursor: pointer;
 }
 
 .footer-content{
@@ -860,6 +902,10 @@ a{
     justify-content: space-evenly;
     font-size: 1.4em;
     letter-spacing: 4px;
+}
+
+.footer-content h1{
+    cursor: pointer;
 }
 
 footer{
